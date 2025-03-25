@@ -1,0 +1,127 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 20px 0;
+}
+.container-header {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 1.8rem;
+}
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+}
+.nav-menu ul li {
+  margin-left: 20px;
+}
+.nav-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.nav-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sección Hero */
+.hero {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?fit=crop&w=1500&q=80') no-repeat center center/cover;
+  height: 500px;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+.hero-overlay h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.btn {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.btn:hover {
+  background-color: #219150;
+}
+
+/* Sección Features */
+.features {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.feature {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.feature img {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+.feature h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.feature p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}

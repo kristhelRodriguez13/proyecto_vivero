@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>InnovaFlor - Registro</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <h1>Regístrese</h1>
+      <p>Sea parte de nuestra familia InnovaFlor. Ingrese sus datos para crear su cuenta.</p>
+    </div>
+    <div class="right-panel">
+      <div class="logo-container">
+        <h2 class="brand">InnovaFlor</h2>
+      </div>
+      <!-- El formulario hace un POST a /register (definido en el controlador) -->
+      <form action="/register" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="apellido">Apellidos</label>
+        <input type="text" id="apellido" name="apellido" required />
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Registrarme</button>
+
+        <p class="register-text">
+          ¿Ya tiene una cuenta? <a href="/login.html">Ingrese aquí</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

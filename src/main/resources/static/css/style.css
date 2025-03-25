@@ -1,0 +1,285 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+/* Contenedor principal que divide la pantalla en dos paneles */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Panel izquierdo (texto de bienvenida o registro) */
+.left-panel {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-panel h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.left-panel p {
+  font-size: 1.1rem;
+  color: #666666;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Panel derecho (formulario) */
+.right-panel {
+  flex: 1;
+  background: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6?fit=crop&w=1200&q=80")
+    no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-panel::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Oscurece un poco la imagen */
+  top: 0;
+  left: 0;
+}
+
+.logo-container {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.brand {
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+/* Formulario */
+form {
+  position: relative;
+  z-index: 2; /* Para estar encima del overlay oscuro */
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  width: 350px;
+  max-width: 80%;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form button:hover {
+  background-color: #219150;
+}
+
+.register-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.register-text a {
+  color: #27ae60;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.forgot-password, .register-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #27ae60;
+}
+.forgot-password:hover, .register-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Encabezado */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  height: 50px; /* Ajusta según tu imagen */
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #006153;
+}
+
+.nav-icons a {
+  color: #333;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Sección hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+  background-color: #f8f8f8;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  color: #006153;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #006153;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #004a40;
+}
+
+.hero-image img {
+  width: 350px; /* Ajusta según tu imagen */
+  object-fit: cover;
+}
+
+/* Sección de características */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 2rem;
+  background-color: #fff;
+}
+
+.feature-item {
+  text-align: center;
+  max-width: 150px;
+}
+
+.feature-item i {
+  font-size: 2rem;
+  color: #006153;
+  margin-bottom: 0.5rem;
+}
+
+.feature-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.feature-item p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Pie de página */
+.footer {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 1rem 2rem;
+  color: #333;
+}
+
+
