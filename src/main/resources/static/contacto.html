@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>InnovaFlor - Contacto</title>
+  <link rel="stylesheet" href="/css/contacto.css" />
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNhV5oOylQk4WcBjW3_94qYosJqKqUGvIoNg&usqp=CAU" alt="Logo" />
+        <span>InnovaFlor</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/home.html">Inicio</a></li>
+          <li><a href="/products.html">Productos</a></li>
+          <li><a href="/services.html">Servicios</a></li>
+          <li><a href="/contacto.html" class="active">Contacto</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Perfil</a></li>
+          <li><a href="/login.html">Cerrar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Encabezado de Contacto -->
+  
+
+  <!-- Formulario de contacto -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-info">
+        <h2>Contacto</h2>
+        <p>Para más información o consultas sobre nuestros productos y servicios, 
+            no dudes en contactarnos. Estamos aquí para ayudarte.</p>
+       
+      </div>
+
+      <form action="/enviar_formulario" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+
+        <div class="form-group">
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" required />
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="submit-button">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Información adicional -->
+  <section class="contact-info-section">
+    <div class="container">
+      <h3>Información de contacto</h3>
+      <ul>
+        <li><strong>Teléfono:</strong> 8888-8888</li>
+        <li><strong>Correo electrónico:</strong> contacto@innovaflor.com</li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 InnovaFlor. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
