@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resumen del Carrito</title>
+  <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">InnovaFlor</div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Servicios</a>
+      <a href="#">Blog</a>
+      <a href="#">Contacto</a>
+      <div class="iconos">
+        <span class="icon">🛒</span>
+        <span class="icon">👤</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="carrito-contenido">
+    <section class="resumen">
+      <h2>Resumen del Carrito</h2>
+      <div id="carrito-items" class="items">
+        <!-- Se cargan dinámicamente -->
+      </div>
+      <div class="totales">
+        <p>Subtotal: <span id="subtotal">$0</span></p>
+        <p>Envío: <span>Gratis</span></p>
+        <p><strong>Total: <span id="total">$0</span></strong></p>
+        <button>Pagar</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="carrito.js"></script>
+</body>
+</html>

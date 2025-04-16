@@ -1,0 +1,82 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 5 abr 2025, 12:59:05
+    Author     : home
+*/
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #333;
+}
+
+.iconos {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.icon {
+  margin: 0 8px;
+  font-size: 18px;
+}
+
+main.carrito-contenido {
+  padding: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.resumen {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.items {
+  margin-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.item p {
+  margin: 0;
+}
+
+.totales p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.totales button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #136b51;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}

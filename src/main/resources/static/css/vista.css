@@ -1,0 +1,85 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 5 abr 2025, 11:58:42
+    Author     : home
+*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.productos {
+  display: flex;
+  padding: 20px;
+  gap: 30px;
+}
+
+.producto {
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+}
+
+button.agregar {
+  background-color: #136b51;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.carrito {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  background: #ffffff;
+  height: 100vh;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.carrito h2 {
+  margin-top: 0;
+}
+
+.total {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.total p {
+  margin: 5px 0;
+}
+
+.total button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #136b51;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+

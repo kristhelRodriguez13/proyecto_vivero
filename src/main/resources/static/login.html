@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>InnovaFlor - Iniciar Sesión</title>
+   <link rel="stylesheet" href="static.css/global.css">
+   
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -27,15 +29,24 @@
         </div>
 
         <button type="submit">Ingresar</button>
+        <div class="google-login">
+  <p>o</p>
+  <a href="/google-login" class="btn-google">
+    <img src="https://img.icons8.com/color/16/000000/google-logo.png" />
+    Iniciar sesión con Google
+  </a>
+</div>
       </form>
       <!-- Mostrar mensaje de error si es necesario -->
       <div class="error">
+          
         <script>
           const params = new URLSearchParams(window.location.search);
           if(params.get("error")){
             document.write("<p style='color: red;'>Correo o contraseña incorrectos.</p>");
           }
         </script>
+        
       </div>
     </div>
   </div>

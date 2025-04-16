@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">InnovaFlor</div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Servicios</a>
+      <a href="#">Blog</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="productos">
+      <div class="producto" data-nombre="Monstera" data-precio="5000">
+        <h3>Monstera</h3>
+        <p>$5.000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>
+      <div class="producto" data-nombre="Hija de Tigre" data-precio="5000">
+        <h3>Hija de Tigre</h3>
+        <p>$5.000</p>
+        <button class="agregar">Agregar al carrito</button>
+      </div>
+    </section>
+
+    <aside class="carrito" id="carrito">
+      <h2>Carrito de compras</h2>
+      <div id="lista-carrito"></div>
+      <div class="total">
+        <p>Subtotal: <span id="subtotal">$0</span></p>
+        <p>Envío: <span>Gratis</span></p>
+        <p><strong>Total: <span id="total">$0</span></strong></p>
+        <button>Pagar</button>
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
