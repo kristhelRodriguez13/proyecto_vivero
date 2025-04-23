@@ -32,8 +32,8 @@ CREATE TABLE Usuarios (
     nombre_usuario VARCHAR(100) NOT NULL,
     email_usuario VARCHAR(150) NOT NULL UNIQUE,
     contraseña_usuario VARCHAR(255) NOT NULL,
-    id_rol INT,
-    FOREIGN KEY (id_rol) REFERENCES Roles_Usuarios(id_rol)
+    id_rol INT,  
+    FOREIGN KEY (id_rol) REFERENCES Roles_Usuarios(id_rol) ON DELETE SET NULL  -- Establecer NULL si el rol es eliminado
 );
 
 -- Tabla de Contacto (para almacenar teléfonos y correos adicionales)
