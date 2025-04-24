@@ -12,36 +12,46 @@ package com.viero.vivero_proyecto.domain;
 
 import jakarta.persistence.*;
 
-@Entity
-@Table(name = "Usuarios")
+import jakarta.persistence.*;
+
+@Entity // Indica que esta clase es una entidad JPA (se mapea a una tabla en la BD)
+@Table(name = "Usuarios") // Especifica el nombre de la tabla en la base de datos
 public class Usuario {
 
+    // Clave primaria, se autogenera con incremento automático
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id_usuario;
 
+    // Campo obligatorio, máximo 100 caracteres
     @Column(name = "nombre_usuario", nullable = false, length = 100)
     private String nombreUsuario;
 
+    // Campo obligatorio, único (no se puede repetir), máximo 150 caracteres
     @Column(name = "email_usuario", nullable = false, length = 150, unique = true)
     private String emailUsuario;
 
+    // Campo obligatorio para la contraseña, se puede encriptar para más seguridad
     @Column(name = "contraseña_usuario", nullable = false, length = 255)
     private String contraseñaUsuario;
 
-    // Ejemplo de campo adicional
+    // Campo opcional para el apellido del usuario
     @Column(name = "apellido_usuario", length = 100)
     private String apellidoUsuario;
 
+    // Constructor vacío requerido por JPA
     public Usuario() {
     }
 
+    // Constructor útil para crear usuarios rápidamente en el código
     public Usuario(String nombreUsuario, String apellidoUsuario, String emailUsuario, String contraseñaUsuario) {
         this.nombreUsuario = nombreUsuario;
         this.apellidoUsuario = apellidoUsuario;
         this.emailUsuario = emailUsuario;
         this.contraseñaUsuario = contraseñaUsuario;
     }
+
+    // Getters y setters para acceder o modificar los datos del usuario
 
     public Integer getId_usuario() {
         return id_usuario;
